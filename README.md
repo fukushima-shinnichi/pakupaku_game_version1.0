@@ -1,4 +1,4 @@
-# パクパクくんゲーム
+# パクパクくんゲーム version1.0
 ## 概要
 * HTML5,CSS3,jQueryを使用し作成したwebサイトで出来る2Dゲームになります
 * レスポンシブル対応
@@ -36,17 +36,17 @@ jQueryのアニメーションによりターゲットが配置されている�
 ***
 ***
 
-# Website of Ideal girlfriend questionnaire
+# Website of pakupaku game version1.0
 ## Overview
-* this web site concept is you will understand Ideal girlfriend.
+* this this website concept is easy 2D game.
 * use HTML5,CSS3,jQuery.
 * correspondence of responsive design.
 * my web design skill is this web site.
 ## Description
-if she check each question, you will understand to she is Ideal girlfriend or not.  
-result page change according to her answer.  
-this skill is javascript of if sentence and HTML input tage.    
-Let's customize to your conditions.  
+if you click foods, points up.  
+result page change according to your get points.  
+this skill is javascript of if sentence and HTML input tage.  
+Let's start this game!!
 ## Component file
 ```
 Component file/
@@ -54,17 +54,17 @@ Component file/
 ├─ jQuery_base                                               # folder of jQuery files.
 ├─ fonts                                                     # folder of web fonts.(saving in this folder at Font Awesome.)
 ├─ img                                                       # folder of images. 
-├─ Ideal_girlfriend_questionnaire.html                       # Top page.（my coding）
+├─ pakupaku_game.html                                        # Top page.（my coding）
 ├─ css/
-|   └─ Ideal_girlfriend_questionnaire                        # folder of css(saving in this folder at css of Font Awesome.)
+|   └─ pakupaku_game                                         # folder of css(saving in this folder at css of Font Awesome.)
 |          ├─ img                                            # folder of images.（image of this folder enter to css.）
-|          └─ Ideal_girlfriend_questionnaire.css             # file of top page css.（my coding）
+|          └─ pakupaku_game.css                              # file of top page css.（my coding）
 └─ js/
-    └─ Ideal_girlfriend_questionnaire                        # folder of js.
-           └─ Ideal_girlfriend_questionnaire.js              # file of top page js.(my coding)
+    └─ pakupaku_game                                         # folder of js.
+           └─ pakupaku_game.js                               # file of top page js.(my coding)
 ```
 ## Install
 1、all files do fork and this all files do clone in local.  
 2、this local files open to web browser.  
 ## URL of Demo site(URL of my portfolio site)
-[http://s-fukushima.sakura.ne.jp/Ideal_girlfriend_questionnaire.html](http://s-fukushima.sakura.ne.jp/Ideal_girlfriend_questionnaire.html "URL of my portfolio site")
+[http://s-fukushima.sakura.ne.jp/pakupaku_game.html](http://s-fukushima.sakura.ne.jp/pakupaku_game.html "URL of my portfolio site")
