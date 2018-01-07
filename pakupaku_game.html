@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>pakupaku_game version1.0</title>
+<meta name="description" content="pakupaku_game game using HTML,CSS,jQuery. this game is eat food when point up. ">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+<link href="https://fonts.googleapis.com/css?family=Acme|Courgette|Kalam|PT+Sans+Caption|Yellowtail" rel="stylesheet">
+<link rel="stylesheet" href="css/pakukaku_game/pakupaku_game.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+  <!-----------  game view erea  -------------------->
+  <div class="main_view">
+    
+    <!--------  game title page  --------------------->
+    <div class="content title">
+      <h1>pakupaku kun geme</h1>
+      <button><p>description</p></button>
+      <small>version 1.0 since 2017/08/27~</small>
+    </div>
+    
+    <!--------  game description page  --------------------->
+    <div class="content description">
+      <h2>description</h2>
+      <div class="descriptionImg">
+        <img src="img/pakupaku_game/discription.png">
+        <div class="discriptionSpeechBalloon">
+          <div class="discriptionSpeechBalloonComment character">
+            <p>You move game character to foods point.</p>
+            <p>You click foods, when foods flow in view.</p>
+          </div>
+        </div>
+        <div class="discriptionSpeechBalloon">
+          <div class="discriptionSpeechBalloonComment cloud">
+            <p>If you eat finished,displayed pink cloud.</p>
+            <p>If you use smart phone,you use width view on smart phone.</p>
+            <p>You click foods, when foods flow in view.</p>
+          </div>
+        </div>
+      </div>
+      <button><p>Let's start!!</p></button>
+    </div>
+    
+    <!--------  countdown  --------------------->
+    <div class="content countdown third">
+      <img src="img/pakupaku_game/countdown3_small.jpg">
+      <h2>3</h2>
+    </div>
+    <div class="content countdown second">
+      <img src="img/pakupaku_game/countdown2_small.jpg">
+      <h2>2</h2>
+    </div>
+    <div class="content countdown first">
+      <img src="img/pakupaku_game/countdown1_small.jpg">
+      <h2>1</h2>
+    </div>
+    <div class="content countdown start">
+      <img src="img/pakupaku_game/countdown_start_small.jpg">
+      <h2>start</h2>
+    </div>
+    
+    <!--------  game view & target  --------------------->
+    <div class="game_view">
+      <label>
+        <input type="checkbox" name="target1" value="1">
+        <span></span>
+        <img src="img/pakupaku_game/target/target1.png">
+      </label>
+      <label>
+        <input type="checkbox" name="target2" value="1">
+        <span></span>
+        <img src="img/pakupaku_game/target/target2.png">
+      </label>
+      <label>
+        <input type="checkbox" name="target3" value="1">
+        <span></span>
+        <img src="img/pakupaku_game/target/target3.png">
+      </label>
+      <label>
+        <input type="checkbox" name="target4" value="1">
+        <span></span>
+        <img src="img/pakupaku_game/target/target4.png">
+      </label>
+      <label>
+        <input type="checkbox" name="target5" value="1">
+        <span></span>
+        <img src="img/pakupaku_game/target/target5.png">
+      </label>
+      <label>
+        <input type="checkbox" name="target6" value="1">
+        <span></span>
+        <img src="img/pakupaku_game/target/target6.png">
+      </label>
+      <label>
+        <input type="checkbox" name="target7" value="1">
+        <span></span>
+        <img src="img/pakupaku_game/target/target7.png">
+      </label>
+      <label>
+        <input type="checkbox" name="target8" value="1">
+        <span></span>
+        <img src="img/pakupaku_game/target/target8.png">
+      </label>
+      <label>
+        <input type="checkbox" name="target9" value="1">
+        <span></span>
+        <img src="img/pakupaku_game/target/target9.png">
+      </label>
+      <label>
+        <input type="checkbox" name="target10" value="1">
+        <span></span>
+        <img src="img/pakupaku_game/target/target10.png">
+      </label>
+      <label>
+        <input type="checkbox" name="target11" value="1">
+        <span></span>
+        <img src="img/pakupaku_game/target/target11.png">
+      </label>
+      <label>
+        <input type="checkbox" name="target12" value="1">
+        <span></span>
+        <img src="img/pakupaku_game/target/target12.png">
+      </label>
+      <label>
+        <input type="checkbox" name="target13" value="1">
+        <span></span>
+        <img src="img/pakupaku_game/target/target13.png">
+      </label>
+      <label>
+        <input type="checkbox" name="target14" value="1">
+        <span></span>
+        <img src="img/pakupaku_game/target/target14.png">
+      </label>
+      <label>
+        <input type="checkbox" name="target15" value="1">
+        <span></span>
+        <img src="img/pakupaku_game/target/target15.png">
+      </label>
+      <label>
+        <input type="checkbox" name="target16" value="1">
+        <span></span>
+        <img src="img/pakupaku_game/target/target16.png">
+      </label>
+      <label>
+        <input type="checkbox" name="target17" value="1">
+        <span></span>
+        <img src="img/pakupaku_game/target/target17.png">
+      </label>
+      <label>
+        <input type="checkbox" name="target18" value="1">
+        <span></span>
+        <img src="img/pakupaku_game/target/target18.png">
+      </label>
+      <label>
+        <input type="checkbox" name="target19" value="1">
+        <span></span>
+        <img src="img/pakupaku_game/target/target19.png">
+      </label>
+      <label>
+        <input type="checkbox" name="target20" value="1">
+        <span></span>
+        <img src="img/pakupaku_game/target/target20.png">
+      </label>
+    </div>
+    
+    <!----------   score   ------------------->
+    <div class="content score perfect">
+      <div class="speechBalloon">
+        <div class="balloonComment">
+          <h2>score</h2>
+          <h3>AAA</h3>
+          <p>your perfect.</p>
+          <p>Shall we eat dessert?</p>
+        </div>
+      </div>
+      <button><p>try again</p></button>
+    </div>
+    <div class="content score success">
+      <div class="speechBalloon">
+        <div class="balloonComment">
+          <h2>score</h2>
+          <h3>AAA</h3>
+          <p>your success.</p>
+          <p>Do you fight that more drink alcohol?</p>
+        </div>
+      </div>
+      <button><p>try again</p></button>
+    </div>
+    <div class="content score failure">
+      <div class="speechBalloon">
+        <div class="balloonComment">
+          <h2>score</h2>
+          <h3>AAA</h3>
+          <p>your failure.</p>
+          <p>You more eat.</p>
+        </div>
+      </div>
+      <button><p>try again</p></button>
+    </div>
+    
+    <!------------  game character  ------------------------->
+     <div class="yen_posi">
+       <div class="yen">
+         <div class="yen1">
+           <div class="yen11"></div>
+         </div>
+         <div class="yen2">
+           <div class="yen22"></div>
+         </div>
+         <div class="eye"></div>
+       </div>
+       <div class="circle_close">
+         <div class="mouth"></div>
+         <div class="eye_close"></div>
+       </div>
+    </div>
+    
+  </div>
+  
+
+<!---------   jQuery    ----------------------->
+<script src="jQuery_base/jquery-3.2.1.min.js"></script>
+<script src="jQuery_base/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="js/pakupaku_game/pakupaku_game.js"></script>
+</body>
+</html>

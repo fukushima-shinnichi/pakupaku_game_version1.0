@@ -1,0 +1,897 @@
+/*******   PC css   ************************/
+/*********   back graund   ****************/
+body {
+  background-image: url(img/main_backgraund.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/********   view size   *****************/
+div.main_view {
+  width: 980px;
+  height: 600px;
+  margin: 50px auto;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+div.content {
+  width: 980px;
+  height: 600px;
+  background-color: rgba(255,255,255,0.85);
+  overflow: hidden;
+  position: relative;
+}
+
+div.game_view {
+  width: 6000px;
+  height: 600px;
+  background-color:rgba(255,255,255,0.85);
+  margin-left: -5020px;
+  position: relative;
+  cursor: none;
+}
+
+label input {
+  display: none;
+}
+
+/*****  game title page   ****************/
+div.content h1 {
+  font-size: 70px;
+  text-align: center;
+  margin: 50px auto 250px auto;
+  font-family: 'Courgette', cursive;
+}
+
+/*******   version information   **************/
+div.title small {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  font-family: 'Courgette', cursive;
+}
+
+/*****  game description page   ****************/
+div.description h2 {
+  font-size: 60px;
+  text-align: center;
+  margin: 15px 0px;
+  font-family: 'Courgette', cursive;
+}
+
+div.descriptionImg {
+  width: 980px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+div.description img {
+  margin: auto 286px;
+}
+
+    /*******   discriptionSpeechBalloon   ***************/
+div.discriptionSpeechBalloon p {
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Kalam', cursive;
+  margin: 0px;
+  color: rgba(255,255,0,0.9);
+}
+
+.discriptionSpeechBalloon:nth-of-type(1) {
+  position: absolute;
+  top: 0px;
+  left: 650px;
+}
+
+.discriptionSpeechBalloon:nth-of-type(2) {
+  position: absolute;
+  top: 0px;
+  left: 5px;
+}
+
+.discriptionSpeechBalloonComment {
+  background-color: rgba(255,182,193,0.8);
+  border: solid 3px rgba(255,255,0,0.9);
+  position: relative;
+}
+
+.character,.cloud {
+  width: 250px;
+}
+
+.character::before {
+  content: "";
+  border: 30px solid transparent;
+  border-right: 30px solid rgba(255,255,0,0.9);
+  position: absolute;
+  top: 30px;
+  left: -60px;
+}
+
+.character::after {
+  content: "";
+  border: 30px solid transparent;
+  border-right: 30px solid rgba(255,182,193,0.9);
+  position: absolute;
+  top: 30px;
+  left: -57px;
+}
+
+.cloud::before {
+  content: "";
+  border: 30px solid transparent;
+  border-left: 30px solid rgba(255,255,0,0.9);
+  position: absolute;
+  top: 170px;
+  left: 250px;
+}
+
+.cloud::after {
+  content: "";
+  border: 30px solid transparent;
+  border-left: 30px solid rgba(255,182,193,0.9);
+  position: absolute;
+  top: 170px;
+  left: 247px;
+}
+
+/*******  game description & start button & try again button *******/
+    /********   game description & start button   *************/
+div.content button {
+  width: 300px;
+  border: none;
+  margin: auto 340px;
+  padding: 0px;
+  border-radius: 56.365px;
+  cursor: pointer;
+  background-color: rgba(255,182,193,0.8);
+}
+
+div.content button p {
+  font-size: 50px;
+  text-align: center;
+  margin: 25px auto;
+  font-family: 'Courgette', cursive;
+  color: rgba(255,255,0,0.9);
+}
+
+div.content button:hover {
+  background-color: rgba(255,99,71,0.8);
+  font-weight: bold;
+}
+
+    /********   try again button   *************/
+div.score button {
+  margin-top: 437px;
+}
+
+div.score button p {
+  color: #000;
+  margin: 0px auto;
+  padding: 25px 0px;
+}
+
+div.success button {
+  margin-top: 437px;
+  margin-left: 150px;
+}
+
+div.score button:hover {
+  background-color: rgba(255,99,71,0.8);
+  font-weight: bold;
+}
+
+div.score button p:hover {
+  color: rgba(255,255,0,0.9);
+}
+
+/*******   each countdown   *************/
+.countdown h2 {
+  font-size: 150px;
+  width: 187.27px;
+  border-radius: 93.653px;
+  background-color: rgba(255,99,71,0.8);
+  color: rgba(255,255,0,0.9);
+  text-align: center;
+  margin: 0px;
+  font-family: 'Courgette', cursive;
+}
+
+.third h2 {
+  position: absolute;
+  top: 185px;
+  right: 75px;
+}
+
+.second h2 {
+  position: absolute;
+  top: 115px;
+  left: 380px;
+}
+
+.first h2 {
+  position: absolute;
+  top: 190px;
+  left: 390px;
+}
+
+.start h2 {
+  width: 350px;
+  position: absolute;
+  top: 90px;
+  left: 100px;
+}
+
+/******   game view hit target   ********/
+.game_view label input:checked + span::before{
+  content: "\f0c2";
+  font-family: "FontAwesome";
+  font-size: 120px;
+  color: rgba(255,182,193,0.9);
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+/******   game view each target   ********/
+.game_view label:nth-child(1) {
+  position: absolute;
+  top: 100px;
+  left: 500px;
+}
+
+.game_view label:nth-child(2) {
+  position: absolute;
+  top: 350px;
+  left: 700px;
+}
+
+.game_view label:nth-child(3) {
+  position: absolute;
+  top:450px;
+  left: 800px;
+}
+
+.game_view label:nth-child(4) {
+  position: absolute;
+  top: 150px;
+  left: 1200px;
+}
+
+.game_view label:nth-child(5) {
+  position: absolute;
+  top: 500px;
+  left: 2000px;
+}
+
+.game_view label:nth-child(6) {
+  position: absolute;
+  top: 450px;
+  left: 2500px;
+}
+
+.game_view label:nth-child(7) {
+  position: absolute;
+  top: 20px;
+  left: 2600px;
+}
+
+.game_view label:nth-child(8) {
+  position: absolute;
+  top: 150px;
+  left: 2700px;
+}
+
+.game_view label:nth-child(9) {
+  position: absolute;
+  top: 350px;
+  left: 2800px;
+}
+
+.game_view label:nth-child(10) {
+  position: absolute;
+  top: 10px;
+  left: 2900px;
+}
+
+.game_view label:nth-child(11) {
+  position: absolute;
+  top: 400px;
+  left: 3200px;
+}
+
+.game_view label:nth-child(12) {
+  position: absolute;
+  top: 300px;
+  left: 3300px;
+}
+
+.game_view label:nth-child(13) {
+  position: absolute;
+  top: 100px;
+  left: 3700px;
+}
+
+.game_view label:nth-child(14) {
+  position: absolute;
+  top: 400px;
+  left: 3800px;
+}
+
+.game_view label:nth-child(15) {
+  position: absolute;
+  top: 350px;
+  left: 3900px;
+}
+
+.game_view label:nth-child(16) {
+  position: absolute;
+  top: 50px;
+  left: 4200px;
+}
+
+.game_view label:nth-child(17) {
+  position: absolute;
+  top: 350px;
+  left: 4500px;
+}
+
+.game_view label:nth-child(18) {
+  position: absolute;
+  top: 450px;
+  left: 4800px;
+}
+
+.game_view label:nth-child(19) {
+  position: absolute;
+  top: 350px;
+  left: 5000px;
+}
+
+.game_view label:nth-child(20) {
+  position: absolute;
+  top: 150px;
+  left: 5500px;
+}
+
+label img {
+  width: 100px;
+}
+
+.game_view label {
+  cursor: none;
+}
+
+/*********   each result   ******************/
+div.perfect {
+  background-image: url(img/result_perfect_small.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+div.success {
+  background-image: url(img/result_success_small.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+div.failure {
+  background-image: url(img/result_ng_small.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+div.score {
+  overflow: hidden;
+  position: relative;
+}
+
+div.score h2, div.score h3 {
+  font-family: 'Courgette', cursive;
+  font-size: 60px;
+  margin: 0px;
+  padding: 30px 0px 0px 0px;
+  text-align: center;
+}
+
+div.score p {
+  font-family: 'Kalam', cursive;
+  font-size: 40px;
+  text-align: center;
+  margin: 0px;
+}
+
+div.balloonComment p:nth-of-type(1) {
+  padding-top: 30px;
+}
+
+div.balloonComment p:nth-of-type(2) {
+  padding-bottom: 30px;
+}
+
+/******   speech balloon of each result   ************/
+    /*********   perfect & failure  ******************/
+.perfect .speechBalloon,.failure .speechBalloon {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+}
+
+div.balloonComment {
+  width: 300px;
+  background-color: rgba(255,192,203,0.7);
+  border-radius: 50px;
+  position: relative;
+}
+
+.perfect .balloonComment::before,.failure .balloonComment::before {
+  content: "";
+  border: 30px solid transparent;
+  border-left: 60px solid rgba(255,192,203,0.7);
+  position: absolute;
+  top: 240px;
+  left: 300px;
+}
+
+    /***********   success   ******************/
+.success .speechBalloon {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+}
+
+.success .balloonComment::before {
+  content: "";
+  border: 30px solid transparent;
+  border-right: 100px solid rgba(255,192,203,0.7);
+  position: absolute;
+  top: 240px;
+  right: 300px;
+}
+
+/*******  yen(mouth open)  **********/
+
+div.yen_posi {
+  width: 60px;
+  height: 60px;
+  display: none;
+  position: absolute;
+}
+
+div.yen {
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  transform: rotate(-90deg);
+  position: relative;
+}
+
+div.yen1,div.yen2{
+  float: left;
+}
+
+div.yen1{
+  width: 25px;
+  height: 50px;
+  overflow: hidden;
+  transform: rotate(-20deg);
+}
+
+div.yen11 {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #ffff00;
+}
+
+div.yen2{
+  width: 25px;
+  height: 50px;
+  overflow: hidden;
+  transform: rotate(200deg);
+}
+
+div.yen22 {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #ff0;
+}
+
+div.eye {
+  position: absolute;
+  top: 10px;
+  left: 32px;
+  width: 7px;
+  height: 7px;
+  border-radius: 4.5px;
+  border: 2px solid #000;
+}
+
+/*******  circle(mouth close)  **********/
+div.circle_close {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #ff0;
+  display: none;
+}
+
+.circle_close .mouth{
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  width: 25px;
+  height: 2px;
+  background-color: #000;
+}
+
+div.eye_close {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 7px;
+  height: 7px;
+  border-radius: 4.5px;
+  border: 2px solid #000;
+}
+
+div.title {
+  display: block;
+}
+
+/****************************************************/
+/********   smart phone css   *********************/
+/**************************************************/
+@media screen and (max-width:767px){
+
+/********   view size   *****************/
+  div.main_view {
+    width: 600px;
+    height: 300px;
+    margin: 37.5px auto;
+  }
+
+  div.content {
+    width: 600px;
+    height: 300px;
+  }
+
+  div.game_view {
+    height: 300px;
+    margin-left: -5400px
+  }
+  
+/*****  game title page   ****************/
+  div.content h1 {
+    margin: 40px auto 100px auto;
+    font-size: 50px;
+  }
+
+/*******   version information   **************/
+  div.title small {
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+  }
+
+/*****  game description page   ****************/
+  div.description h2 {
+    font-size: 40px;
+    margin: 5px 0px;
+  }
+
+  div.descriptionImg {
+    width: 600px;
+    margin-bottom: 30px;
+  }
+
+  div.description img {
+    width: 200px;
+    margin: 0px 200px;
+  }
+
+    /*******   discriptionSpeechBalloon   ***************/
+  div.discriptionSpeechBalloon p {
+    font-size: 15px;
+  }
+
+  .discriptionSpeechBalloon:nth-of-type(1) {
+    position: absolute;
+    top: -20px;
+    left: 400px;
+  }
+
+  .discriptionSpeechBalloon:nth-of-type(2) {
+    position: absolute;
+    top: -20px;
+    left: 15px;
+  }
+
+  .character,.cloud {
+    width: 150px;
+  }
+
+  .cloud::before {
+    content: "";
+    border: 30px solid transparent;
+    border-left: 30px solid rgba(255,255,0,0.9);
+    position: absolute;
+    top: 70px;
+    left: 150px;
+  }
+
+  .cloud::after {
+    content: "";
+    border: 30px solid transparent;
+    border-left: 30px solid rgba(255,182,193,0.9);
+    position: absolute;
+    top: 70px;
+    left: 147px;
+  }
+
+/*******  game description & start button & try again button *******/
+    /********   game description & start button   *************/
+  div.content button {
+    width: 200px;
+    margin: 0px 200px;
+  }
+
+  div.content button p {
+    font-size: 30px;
+    margin: 10px auto;
+  }
+
+    /********   try again button   *************/
+  div.score button { 
+    margin:  233px 200px 0px 200px;
+  }
+
+  div.score button p {
+    padding: 0px;
+  }
+
+  div.success button {
+    margin-top: 233px;
+    margin-left: 60px;
+  }
+
+/*******   each countdown   *************/
+  .countdown img {
+    width: 600px;
+  }
+  
+  .countdown h2 {
+    font-size: 80px;
+    width: 100px;
+  }
+
+  .third h2 {
+    position: absolute;
+    top: 120px;
+    right: 40px;
+  }
+
+  .second h2 {
+    position: absolute;
+    top: 85px;
+    left: 240px;
+  }
+
+  .first h2 {
+    position: absolute;
+    top: 140px;
+    left: 240px;
+  }
+
+  .start h2 {
+    width: 200px;
+    position: absolute;
+    top: 70px;
+    left: 80px;
+  }
+
+/******   game view hit target   ********/
+  .game_view label input:checked + span::before{
+    font-size: 90px;
+  }
+
+/******   game view each target   ********/
+  .game_view label:nth-child(1) {
+    position: absolute;
+    top: 10px;
+    left: 500px;
+  }
+
+  .game_view label:nth-child(2) {
+    position: absolute;
+    top: 230px;
+    left: 700px;
+  }
+
+  .game_view label:nth-child(3) {
+    position: absolute;
+    top:120px;
+    left: 800px;
+  }
+
+  .game_view label:nth-child(4) {
+    position: absolute;
+    top: 10px;
+    left: 1200px;
+  }
+
+  .game_view label:nth-child(5) {
+    position: absolute;
+    top: 150px;
+    left: 2000px;
+  }
+
+  .game_view label:nth-child(6) {
+    position: absolute;
+    top: 50px;
+    left: 2500px;
+  }
+
+  .game_view label:nth-child(7) {
+    position: absolute;
+    top: 5px;
+    left: 2600px;
+  }
+
+  .game_view label:nth-child(8) {
+    position: absolute;
+    top: 25px;
+    left: 2700px;
+  }
+
+  .game_view label:nth-child(9) {
+    position: absolute;
+    top: 200px;
+    left: 2800px;
+  }
+
+  .game_view label:nth-child(10) {
+    position: absolute;
+    top: 5px;
+    left: 2900px;
+  }
+
+  .game_view label:nth-child(11) {
+    position: absolute;
+    top: 150px;
+    left: 3200px;
+  }
+
+  .game_view label:nth-child(12) {
+    position: absolute;
+    top: 200px;
+    left: 3300px;
+  }
+
+  .game_view label:nth-child(13) {
+    position: absolute;
+    top: 80px;
+    left: 3700px;
+  }
+
+  .game_view label:nth-child(14) {
+    position: absolute;
+    top: 220px;
+    left: 3800px;
+  }
+
+  .game_view label:nth-child(15) {
+    position: absolute;
+    top: 30px;
+    left: 3900px;
+  }
+
+  .game_view label:nth-child(16) {
+    position: absolute;
+    top: 50px;
+    left: 4200px;
+  }
+
+  .game_view label:nth-child(17) {
+    position: absolute;
+    top: 200px;
+    left: 4500px;
+  }
+
+  .game_view label:nth-child(18) {
+    position: absolute;
+    top: 80px;
+    left: 4800px;
+  }
+
+  .game_view label:nth-child(19) {
+    position: absolute;
+    top: 220px;
+    left: 5000px;
+  }
+
+  .game_view label:nth-child(20) {
+    position: absolute;
+    top: 150px;
+    left: 5500px;
+  }
+
+  label img {
+    width: 70px;
+  }
+  
+/*********   each result   ******************/
+  div.score h2, div.score h3 {
+    font-size: 40px;
+    padding: 10px 0px 0px 0px;
+  }
+
+  div.score p {
+    font-size: 20px;
+  }
+
+  div.balloonComment p:nth-of-type(1) {
+    padding-top: 10px;
+  }
+
+  div.balloonComment p:nth-of-type(2) {
+    padding-bottom: 10px;
+  }
+
+  /******   speech balloon of each result   ************/
+      /*********   perfect & failure  ******************/
+  .perfect .speechBalloon,.failure .speechBalloon {
+    position: absolute;
+    top: 50px;
+    left: 5px;
+  }
+
+  div.balloonComment {
+    width: 200px;
+  }
+
+  .perfect .balloonComment::before,.failure .balloonComment::before {
+    content: "";
+    border: 30px solid transparent;
+    border-left: 60px solid rgba(255,192,203,0.7);
+    position: absolute;
+    top: 80px;
+    left: 200px;
+  }
+
+      /***********   success   ******************/
+  .success .speechBalloon {
+    position: absolute;
+    top: 40px;
+    right: 80px;
+  }
+
+  .success .balloonComment::before {
+    position: absolute;
+    top: 80px;
+    right: 200px;
+  }
+  
+  }
+  /*****   goole fonts   *////////////////////
+  /*
+  font-family: 'Acme', sans-serif;
+  font-family: 'PT Sans Caption', sans-serif;
+  font-family: 'Courgette', cursive;
+  font-family: 'Yellowtail', cursive;
+  font-family: 'Kalam', cursive;
+  */
